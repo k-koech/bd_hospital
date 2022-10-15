@@ -20,7 +20,7 @@ class ApplicationController < Sinatra::Base
         # response.headers["Allow"] = "GET, PUT, POST, DELETE, OPTIONS, HEAD"
         response.headers["Access-Control-Allow-Methods"] = "GET, PUT, POST, DELETE, OPTIONS, HEAD"
         response.headers["Access-Control-Allow-Headers"] = "Authorization, Content-Type, Accept, X-User-Email, X-Auth-Token"
-        response.headers["Access-Control-Allow-Origin"] = "http://localhost:3000"
+        response.headers["Access-Control-Allow-Origin"] = "*"
         200
     end 
   
@@ -93,9 +93,8 @@ class ApplicationController < Sinatra::Base
 
     get '/booking' do
         booking = Booking.all.order(:id)
-        booking.to_json
-        # render json: booking
-        # , include: :blood_group
+        # booking.to_json
+        render json: booking, include: :hospital
         # render json: dog_house, include: :reviews
 
     end
@@ -112,7 +111,7 @@ class ApplicationController < Sinatra::Base
         booking.to_json
     end
 
-    # Blood group
+    # ======Blood group =========
     post '/bloodgroup' do  
         blood_group = BloodGroup.create(blood_type: params[:blood_type])
         # if blood_group.valid?
@@ -157,13 +156,7 @@ class ApplicationController < Sinatra::Base
         review.to_json
     end
     
-    get '/add/:num1/:num2' do
-        num1 = params[:num1].to_i
-        num2 = params[:num2].to_i
-    
-        sum = num1 + num2
-        { result: sum }.to_json
-    end
+
    
 end
 
