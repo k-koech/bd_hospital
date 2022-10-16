@@ -66,6 +66,7 @@ GEM
     mustermann (2.0.2)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.5.8)
+    pg (1.4.4)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -132,6 +133,7 @@ DEPENDENCIES
   activerecord (~> 6.1)
   database_cleaner
   faker (~> 2.18)
+  pg (~> 1.4)
   pry
   puma
   rack-cors

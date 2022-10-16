@@ -3,8 +3,8 @@ source "https://rubygems.org"
 # A DSL for quickly creating web applications
 # https://github.com/sinatra/sinatra
 gem "sinatra", "~> 2.1"
-
-
+gem 'pg', '~> 1.4'
+# gem "pg"
 gem "puma"
 gem 'sinatra-validation'
 gem 'sinatra-cross_origin'
