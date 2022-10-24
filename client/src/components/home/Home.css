@@ -1,0 +1,14 @@
+.home-row
+{
+   min-height: 80vh !important;
+   display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.home-row .landingImage
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
