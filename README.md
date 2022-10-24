@@ -1,8 +1,8 @@
-# Book Blood APP 
-#### The app is a Blood gallery app, 16/10/2022
+# Get Blood APP 
+#### The app is a Blood app, 16/10/2022
 #### **By Kelvin Kipchumba**
 ## Project Description
-    Its a App where you can book blood from any hospital based on blood group.
+    Its a App where you can get blood from any hospital based on blood group.
 ## Setup/Installation Requirements
     - Download a file in the code section to the desired folder
     - Extract the files
@@ -21,6 +21,7 @@
     - Add Blood group.
     - View, create, update and delete hospitals.
     - Add blood to different hospitals(i.e O, O+, A, B etc) and everytime you add a blood group that exists it increments the amount of blood.
+    - In future, I will intergrate the booking feature plus authentication.
   
     
 ## Live link
