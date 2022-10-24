@@ -144,10 +144,9 @@ class ApplicationController < Sinatra::Base
     post '/bloodavailable' do
         check = BloodAvailable.find_by(blood_group_id: params[:blood_group_id], hospital_id: params[:hospital_id])
         
-        puts "xxxxxxxxxxxxx"
         if check
             ba = BloodAvailable.find_by(id: check.id)
-            updated_amount = check.amount+params[:amount]
+            updated_amount = check.amount+ params[:amount].to_i
             ba.update(
                 amount: updated_amount,
                 blood_group_id: params[:blood_group_id],
@@ -168,7 +167,7 @@ class ApplicationController < Sinatra::Base
     end
 
     get '/bloodavailable' do
-        ba = Blood_Available.all.order(:code).limit(50)
+        ba = BloodAvailable.all.limit(50)
         ba.to_json 
     end
   

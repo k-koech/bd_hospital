@@ -20,18 +20,20 @@
     - View Blood groups on landing page.
     - Add Blood group.
     - View, create, update and delete hospitals.
-    - Book and view booked blood from hospitals.
+    - Add blood to different hospitals(i.e O, O+, A, B etc) and everytime you add a blood group that exists it increments the amount of blood.
   
     
 ## Live link
 Deployed Frontend can be accessed here [react](https://634aa35101ec291c6ff840b4--prismatic-selkie-3dbcf0.netlify.app/)   
+Deployed Backend can be accessed here [Sinatra](https://floating-lake-54098.herokuapp.com/bloodavailable)
+Note: Backend might not work at the time you are viewing this because the free version of heroku is being wiped out
 
 ## Known Bugs
     The application works perfectly well, no bugs.
 
 ## Technologies used
     - React 
-    - Rub
+    - Ruby
     - HTML
     - CSS
     - Fontawesome
