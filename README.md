@@ -7,7 +7,7 @@
     - Download a file in the code section to the desired folder
     - Extract the files
     - Open the folder with vs code.
-    - Open frontend folder
+    - Open client folder
     - Then run "npm install" to install react packages.
     - Run "npm start" to start react server, http://127.0.0.1:3000/.
     - The open backend folder and run "bundle install".
