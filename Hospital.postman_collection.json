@@ -1,0 +1,316 @@
+{
+	"info": {
+		"_postman_id": "8d1f21ee-c602-415c-a953-77a2a7727370",
+		"name": "Hospital",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14379927"
+	},
+	"item": [
+		{
+			"name": "1.Add blood group",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "blood_type",
+							"value": "kk",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9292/bloodgroup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9292",
+					"path": [
+						"bloodgroup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2.Get blood group",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "blood_type",
+							"value": "A",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9292/bloodgroup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9292",
+					"path": [
+						"bloodgroup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Bookings",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:9292/booking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9292",
+					"path": [
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get bookings",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:9292/booking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9292",
+					"path": [
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get hospitals",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "mike",
+							"type": "text"
+						},
+						{
+							"key": "county",
+							"value": "errfs",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "345345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9292/hospitals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9292",
+					"path": [
+						"hospitals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get blood available",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "mike",
+							"type": "text"
+						},
+						{
+							"key": "county",
+							"value": "errfs",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "345345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9292/bloodavailable",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9292",
+					"path": [
+						"bloodavailable"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create blood available",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "amount",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "hospital_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "blood_group_id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9292/bloodavailable",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9292",
+					"path": [
+						"bloodavailable"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get 1 hospitals",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:9292/hopitals/352",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9292",
+					"path": [
+						"hopitals",
+						"352"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update hospital",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Kenya Wome",
+							"type": "text"
+						},
+						{
+							"key": "county",
+							"value": "Nairobi",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "5423",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9292/hospital/292",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9292",
+					"path": [
+						"hospital",
+						"292"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
