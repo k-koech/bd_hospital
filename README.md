@@ -3,7 +3,7 @@
 #### **By Kelvin Kipchumba**
 ## Project Description
     Its a App where you can get blood from any hospital based on blood group.
-    kk
+    
 ## Setup/Installation Requirements
     - Download a file in the code section to the desired folder
     - Extract the files
